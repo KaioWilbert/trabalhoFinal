@@ -1,0 +1,63 @@
+# O QUE É O SEQUELIZE
+
+O Sequelize é uma ORM (Mapeador Objeto-Relacional) para Node.js, usada para interagir com bancos de dados relacionais SQL Server de forma mais simples e estruturada.
+
+# PARA QUE SER O SEQUELIZE 
+
+Mapear tabelas do banco de dados em objetos JavaScript
+
+Criar, ler, atualizar e deletar dados (CRUD)
+Com comandos simples como findAll, create, update, destroy.
+
+Gerenciar relacionamentos entre tabelas
+
+executar migrações e sincronizar modelos com o banco
+
+# para que serve a API 
+
+Contém os MODELOS OU DEFINIÇÕES DE ENTIDADE da aplicação, geralmente ligadas ao banco de dados. Cada arquivo (category.js, order.js, etc.) representa uma ENTIDADE (ou tabela) como Categoria, Pedido, Produto, Usuário, etc.
+
+# para que serve o CONFIG
+
+Armazena configurações do projeto, como conexão com o banco de dados, variáveis de ambiente, ou configurações do Sequelize.
+
+# para que serve o CONTROLLERS
+
+Contém os CONTROLADORES, que são responsáveis por RECEBE AS REQUISIÇÕES, processar os dados (às vezes com ajuda dos serviços) e RESPONDE O CLIENTE . Exemplo: userController.js pode ter funções como createUser, getUser, etc.
+
+# para que serve o MODELS
+
+Define os MODELOS DO SEQUELIZE, que representam as tabelas do banco de dados. Eles descrevem os campos, tipos de dados e relacionamentos entre tabelas.
+
+# para que serve o ROUTER
+
+Contém os ARQUIVOS DE ROTAS, que definem os caminhos da API (por exemplo, GET /users, POST /products). ELES CONCTAM AS ROTAS AOS CONTROLADORES
+
+# para que serve o swagger
+
+ contém a documentação da API usando Swagger, uma ferramenta que gera uma interface visual para testar e entender os endpoints da API.
+
+# para que serve o NODE_MODULES
+
+Pasta gerada automaticamente pelo npm com TODAS AS DEPENDENCIAS do projeto. Você não precisa mexer nela diretamente.
+
+# para que serve o .ENV
+
+Arquivo de variáveis de ambiente, como SENHAS, URLs de banco de dados, chaves secretas. Nunca deve ser enviado para repositórios públicos.
+
+# para que serve o PACKAGE.JSON 
+
+Arquivo principal de configuração do projeto Node.js. Define:
+
+Nome do projeto
+Versão
+Scripts (como start)
+Dependências
+
+# para que serve o  package-lock.json
+
+Arquivo gerado automaticamente que trava as versões exatas das dependências instaladas, garantindo que o projeto funcione igual em qualquer máquina.
+
+# para que serve o server.js
+
+Arquivo principal que INICIA O SERVIDOR da aplicação. Geralmente importa o Express, configura middlewares, rotas e inicia o listen().
