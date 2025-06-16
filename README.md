@@ -1,5 +1,4 @@
 # trabalhoFinalDesenvolvimento Backend com Node.js, MySQL, TypeORM e Swagger
-Vence 16 de junho de 2025 às 23:59
 Backend
 Instruções
 # Introdução
